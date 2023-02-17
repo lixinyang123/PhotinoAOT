@@ -56,6 +56,9 @@ Section "Dummy Section" SecDummy
   File /nonfatal /r "bin\Release\net7.0\win-x64\publish\*.*"
   ;Create uninstaller
   WriteUninstaller "$INSTDIR\Uninstall.exe"
+  
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Demo" "DisplayName" "Demo"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Demo" "UninstallString" "$INSTDIR\Uninstall.exe"
 
 SectionEnd
 
@@ -78,5 +81,6 @@ Section "Uninstall"
   ;ADD YOUR OWN FILES HERE...
 
   RMDir /r "$INSTDIR"
+  DeleteRegKey HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\Demo"
 
 SectionEnd
