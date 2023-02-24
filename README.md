@@ -1,23 +1,21 @@
 # PhotinoAOT
 
-Photino.NET AOT Builder. `~1.7MB size`
+Photino.NET AOT Builder. `~1.6MB size`
 
 ![image](https://user-images.githubusercontent.com/32838371/220255338-31b198d5-8673-4a56-8b5e-d431b441e2fa.png)
-
-You can disable UPX Compresse to get lower memory usage.
 
 ## Prerequisites
 
 Windows
 
 ```bash
-Visual Studio 2022, including Desktop development with C++ workload.
+Visual Studio 2022, including .NET 8 & Desktop development with C++ workload.
 ```
 
 Ubuntu (20.04+)
 
 ```bash
-sudo apt-get install libicu-dev cmake
+sudo apt-get install dotnet-sdk-8.0 libicu-dev cmake
 ```
 
 ## Publish with NativeAOT
@@ -31,7 +29,7 @@ dotnet publish -r win-x64 -c Release
 
 ## Builder the installer with NSIS
 
-NSIS installer `~1.6MB usage`
+NSIS installer `~1.4MB size`
 
 ```bash
 pwsh ./publish.ps1
