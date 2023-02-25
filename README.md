@@ -2,7 +2,7 @@
 
 Photino.NET AOT Builder. `~1.6MB size`
 
-![image](https://user-images.githubusercontent.com/32838371/220255338-31b198d5-8673-4a56-8b5e-d431b441e2fa.png)
+![image](https://user-images.githubusercontent.com/32838371/221382001-e7129318-38f6-4ada-814a-e44dd38d6733.png)
 
 ## Prerequisites
 
