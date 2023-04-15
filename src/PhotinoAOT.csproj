@@ -19,7 +19,7 @@
 	</Target>
 	
     <ItemGroup>
-        <PackageReference Include="Photino.NET" Version="2.3.2" />
+        <PackageReference Include="Photino.NET" Version="2.4.0" />
         <PackageReference Include="PublishAotCompressed" Version="1.0.0" />
     </ItemGroup>
 
