@@ -7,17 +7,17 @@
         <Nullable>enable</Nullable>
         <!--Public AOT-->
         <PublishAot>true</PublishAot>
+        <InvariantGlobalization>true</InvariantGlobalization>
         <StripSymbols>true</StripSymbols>
     </PropertyGroup>
 
-	<ItemGroup>
-		<WebRoot Include="wwwroot\**" />
-	</ItemGroup>
+    <ItemGroup>
+	<Compile Remove="wwwroot\**" />
+	<None Update="wwwroot\**">
+	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	</None>
+    </ItemGroup>
 
-	<Target Name="CopyLibFolder" BeforeTargets="PrepareForBuild">
-		<Copy SourceFiles="@(WebRoot)" DestinationFiles="$(OutputPath)\wwwroot\%(RecursiveDir)%(Filename)%(Extension)" />
-	</Target>
-	
     <ItemGroup>
         <PackageReference Include="Photino.NET" Version="2.4.0" />
         <PackageReference Include="PublishAotCompressed" Version="1.0.0" />
