@@ -1,8 +1,8 @@
-﻿using PhotinoNET;
+﻿using Photino.NET;
 using System.Drawing;
 using System.Text;
 
-namespace HelloPhotinoApp
+namespace PhotinoAOT
 {
     class Program
     {
@@ -28,7 +28,7 @@ namespace HelloPhotinoApp
                         })();
                     "));
                 })
-                .RegisterWebMessageReceivedHandler((object? sender, string message) =>
+                .RegisterWebMessageReceivedHandler((sender, message) =>
                 {
                     PhotinoWindow? window = sender as PhotinoWindow;
                     string response = $"Received message: \"{message}\"";
