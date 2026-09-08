@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <OutputType>WinExe</OutputType>
-        <TargetFramework>net9.0</TargetFramework>
+        <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <!--Public AOT-->
@@ -11,14 +11,14 @@
     </PropertyGroup>
 
     <ItemGroup>
-	<Compile Remove="wwwroot\**" />
-	<None Update="wwwroot\**">
-	<CopyToOutputDirectory>Always</CopyToOutputDirectory>
-	</None>
+	    <Compile Remove="wwwroot\**" />
+	    <None Update="wwwroot\**">
+	        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	    </None>
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="Photino.NET" Version="3.2.3" />
-        <PackageReference Include="PublishAotCompressed" Version="1.0.3" />
+        <PackageReference Include="Photino.NET" Version="4.0.16" />
+        <PackageReference Include="PublishAotCompressed" Version="1.0.5" />
     </ItemGroup>
 </Project>

@@ -9,13 +9,13 @@ Photino.NET AOT Builder. `~1.6MB size`
 Windows
 
 ```bash
-Visual Studio 2022, including .NET 8 & Desktop development with C++ workload.
+Visual Studio 2022, including .NET 10 & Desktop development with C++ workload.
 ```
 
-Ubuntu (20.04+)
+Ubuntu (24.04+)
 
 ```bash
-sudo apt-get install dotnet-sdk-8.0 libicu-dev cmake
+sudo apt-get install dotnet-sdk-10.0 libicu-dev cmake
 ```
 
 ## Publish with NativeAOT
